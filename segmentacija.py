@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
 
+
 def kmeans(slika, k=3, iteracije=10):
     Z = slika.reshape((-1, 3)).astype(np.float32)
     kriterij = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, iteracije, 1.0)
